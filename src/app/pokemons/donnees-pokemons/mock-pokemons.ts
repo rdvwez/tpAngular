@@ -8,7 +8,8 @@ export const POKEMONS: Pokemon[] = [
         cp: 5,
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",
         types: ["Plante", "Poison"],
-        created: new Date()
+        created: new Date(),
+        scarcity: "**"
     },
     {
         id: 2,
@@ -17,7 +18,8 @@ export const POKEMONS: Pokemon[] = [
         cp: 6,
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png",
         types: ["Feu"],
-        created: new Date()
+        created: new Date(),
+        scarcity: "*"
     },
     {
         id: 3,
@@ -26,7 +28,8 @@ export const POKEMONS: Pokemon[] = [
         cp: 4,
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png",
         types: ["Eau"],
-        created: new Date()
+        created: new Date(),
+        scarcity: "***"
     },
     {
         id: 4,
@@ -35,7 +38,8 @@ export const POKEMONS: Pokemon[] = [
         cp: 2,
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/013.png",
         types: ["Insecte", "Poison"],
-        created: new Date()
+        created: new Date(),
+        scarcity: "*****"
     },
     {
         id: 5,
@@ -44,7 +48,8 @@ export const POKEMONS: Pokemon[] = [
         cp: 7,
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png",
         types: ["Normal", "Vol"],
-        created: new Date()
+        created: new Date(),
+        scarcity: "***"
     },
     {
         id: 6,
@@ -53,7 +58,8 @@ export const POKEMONS: Pokemon[] = [
         cp: 6,
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/019.png",
         types: ["Normal"],
-        created: new Date()
+        created: new Date(),
+        scarcity: "****"
     },
     {
         id: 7,
@@ -62,7 +68,8 @@ export const POKEMONS: Pokemon[] = [
         cp: 5,
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/021.png",
         types: ["Normal", "Vol"],
-        created: new Date()
+        created: new Date(),
+        scarcity: "*****"
     },
     {
         id: 8,
@@ -71,7 +78,8 @@ export const POKEMONS: Pokemon[] = [
         cp: 4,
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/023.png",
         types: ["Poison"],
-        created: new Date()
+        created: new Date(),
+        scarcity: "*"
     },
     {
         id: 9,
@@ -80,7 +88,8 @@ export const POKEMONS: Pokemon[] = [
         cp: 7,
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png",
         types: ["Electrik"],
-        created: new Date()
+        created: new Date(),
+        scarcity: "******"
     },
     {
         id: 10,
@@ -89,7 +98,8 @@ export const POKEMONS: Pokemon[] = [
         cp: 3,
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/027.png",
         types: ["Normal"],
-        created: new Date()
+        created: new Date(),
+        scarcity: "***"
     },
     {
         id: 11,
@@ -98,7 +108,8 @@ export const POKEMONS: Pokemon[] = [
         cp: 5,
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/035.png",
         types: ["Fée"],
-        created: new Date()
+        created: new Date(),
+        scarcity: "**"
     },
     {
         id: 12,
@@ -107,6 +118,7 @@ export const POKEMONS: Pokemon[] = [
         cp: 8,
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/037.png",
         types: ["Feu"],
-        created: new Date()
+        created: new Date(),
+        scarcity: "*******"
     }
 ];
