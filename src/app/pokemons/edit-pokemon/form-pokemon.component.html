@@ -59,6 +59,20 @@
                  Les dégâts du pokémon sont compris entre 0 et 99.
            </div>
         </div>
+         <!-- Pokemon scarcity -->
+         <div class="form-group">
+          <label for="scarcity">Rareté</label>
+          <input type="text" class="form-control" id="scarcity"
+                  required
+                  pattern="^[*]{1,8}$"
+                 [(ngModel)]="pokemon.scarcity" name="scarcity"
+                 #scarcity="ngModel">
+
+          <div [hidden]="scarcity.valid || scarcity.pristine"
+                class="card-panel red accent-1">
+                la rareté est symbolisée par un nombre de "*" compris entre (1-8).
+          </div>
+        </div>
   
         <!-- Pokemon types -->
         <form class="form-group">
