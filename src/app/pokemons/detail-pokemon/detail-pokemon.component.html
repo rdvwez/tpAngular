@@ -22,6 +22,10 @@
                   <td><strong>{{ pokemon.cp}}</strong></td>
                 </tr>
                 <tr>
+                  <td>Rareté</td>
+                  <td><strong>{{ pokemon.scarcity}}</strong></td>
+                </tr>
+                <tr>
                   <td>Types</td>
                   <td>
                     <span *ngFor="let type of pokemon.types" class="{{ type | pokemonTypeColor }}">{{ type }}</span>
