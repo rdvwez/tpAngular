@@ -23,7 +23,9 @@
                 </tr>
                 <tr>
                   <td>Rareté</td>
-                  <td><strong>{{ pokemon.scarcity}}</strong></td>
+                  <td>
+                    <strong>{{ pokemon.scarcity | pokemonScarcity }}</strong>
+                  </td>
                 </tr>
                 <tr>
                   <td>Types</td>

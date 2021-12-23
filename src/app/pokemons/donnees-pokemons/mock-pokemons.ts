@@ -79,7 +79,7 @@ export const POKEMONS: Pokemon[] = [
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/023.png",
         types: ["Poison"],
         created: new Date(),
-        scarcity: "*"
+        scarcity: "********"
     },
     {
         id: 9,
