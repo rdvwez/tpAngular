@@ -4,7 +4,9 @@
 
     <search-pokemon></search-pokemon>
     <div class=" center">
-      <a (click)="goToCreate()" class=" btn-large waves-effect waves-light red" title="ajouter un pokemon">ajouter</a></div>
+      <a (click)="goToCreate()" class=" btn-large waves-effect waves-light redbtn-small" title="ajouter un pokemon">ajouter</a>
+      <a (click)="goToFigth()" class=" btn-large waves-effect waves-light redbtn-small" title="duel">lancer le duel</a>
+    </div>
     <div *ngFor='let pokemon of pokemons' class="col s6 m4">
       <div class="card horizontal" (click)="selectPokemon(pokemon)" pkmnBorderCard="yellow">
         <div class="card-image">
