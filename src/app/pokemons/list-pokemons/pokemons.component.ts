@@ -30,6 +30,11 @@ export class PokemonComponent implements OnInit{
       let link = ['pokemon/add'];
       this.router.navigate(link);
     }
+    
+    goToFigth(){
+      let link = ['pokemon/duel'];
+      this.router.navigate(link);
+    }
 
 }
 

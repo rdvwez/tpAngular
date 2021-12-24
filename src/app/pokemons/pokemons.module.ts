@@ -16,6 +16,7 @@ import { LoaderComponent } from "../loader.component";
 import { AddPokemonComponent } from "./add-pokemon/add-pokemon.component";
 import { AddFormPokemonComponent } from "./add-pokemon/formadd-pokemon.component";
 import { AuthGuard } from "../auth-guard.service";
+import { DuelPokemonComponent } from "./duel-pokemon/duel-pokemon.component";
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { AuthGuard } from "../auth-guard.service";
     AddPokemonComponent,
     AddFormPokemonComponent,
     PokemonSearchComponent,
+    DuelPokemonComponent,
     LoaderComponent,
   ],
   imports: [
