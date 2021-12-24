@@ -8,6 +8,7 @@ import { PokemonScarcityPipe } from "./pipes/pokemon-scarcity.pipe";
 import { BorderCardDirective  } from './directives/border-card.directive';
 import { EditPokemonComponent } from './edit-pokemon/edit-pokemon.component';
 import { FormPokemonComponent } from './edit-pokemon/form-pokemon.component';
+import { PokemonSearchComponent } from "./search-pokemon/search-pokemon.component";
 import { FormsModule } from '@angular/forms';
 import { PokemonsService } from './pokemons.service';
 import { PokemonRoutingModule } from "./pokemons-routing.module";
@@ -26,6 +27,7 @@ import { AddFormPokemonComponent } from "./add-pokemon/formadd-pokemon.component
     FormPokemonComponent,
     AddPokemonComponent,
     AddFormPokemonComponent,
+    PokemonSearchComponent,
     LoaderComponent,
   ],
   imports: [
