@@ -59,6 +59,31 @@ export class PokemonsService{
     );
   }
 
+  deletePokemon(pokemon: Pokemon): Observable<Pokemon>{
+    const url = `${this.pokemonsUrl}/${pokemon.id}`;
+    const httpOptions = {
+      headers: new HttpHeaders({'Content-Type':'appliction/json'})
+    };
+
+    return this.http.delete<Pokemon>(url, httpOptions).pipe(
+      tap(_ => this.log('deleted pokemon id =${pokemon.id}')),
+      catchError(this.handleError<Pokemon>('deletePokemon'))
+    );
+  }
+
+  createPokemon(pokemon: Pokemon): Observable<Pokemon>{
+    const httpOptions = {
+      headers: new HttpHeaders({'Content-Type':'appliction/json'})
+    };
+
+    return this.http.post<Pokemon>(this.pokemonsUrl, pokemon, httpOptions).pipe(
+      tap(_ => this.log('created pokemon id =${pokemon.id}')),
+      catchError(this.handleError<Pokemon>('createPokemon'))
+    );
+  }
+
+  
+
   getPokemonTypes(): string[]{
     return ['Plante', 'Feu', 'Eau', 'Insecte', 'Normal', 'Electrik', 'Poison', 'Fée', 'Vol'];
   }

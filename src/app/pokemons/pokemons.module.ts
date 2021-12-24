@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { PokemonsService } from './pokemons.service';
 import { PokemonRoutingModule } from "./pokemons-routing.module";
 import { LoaderComponent } from "../loader.component";
+import { AddPokemonComponent } from "./add-pokemon/add-pokemon.component";
+import { AddFormPokemonComponent } from "./add-pokemon/formadd-pokemon.component";
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { LoaderComponent } from "../loader.component";
     BorderCardDirective,
     EditPokemonComponent,
     FormPokemonComponent,
+    AddPokemonComponent,
+    AddFormPokemonComponent,
     LoaderComponent,
   ],
   imports: [

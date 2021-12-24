@@ -26,5 +26,10 @@ export class PokemonComponent implements OnInit{
       this.router.navigate(link);
     }
 
+    goToCreate(){
+      let link = ['pokemon/add'];
+      this.router.navigate(link);
+    }
+
 }
 
