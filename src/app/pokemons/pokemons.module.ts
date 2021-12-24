@@ -15,6 +15,7 @@ import { PokemonRoutingModule } from "./pokemons-routing.module";
 import { LoaderComponent } from "../loader.component";
 import { AddPokemonComponent } from "./add-pokemon/add-pokemon.component";
 import { AddFormPokemonComponent } from "./add-pokemon/formadd-pokemon.component";
+import { AuthGuard } from "../auth-guard.service";
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { AddFormPokemonComponent } from "./add-pokemon/formadd-pokemon.component
     FormsModule,
     PokemonRoutingModule,
   ],
-  providers: [PokemonsService],
+  providers: [PokemonsService, AuthGuard],
   bootstrap: []
 })
 export class PokemonsModule { }

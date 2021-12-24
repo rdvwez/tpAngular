@@ -5,12 +5,15 @@ import { DetailPokemonComponent } from "./detail-pokemon/detail-pokemon.componen
 import { EditPokemonComponent } from "./edit-pokemon/edit-pokemon.component";
 import { AddPokemonComponent } from "./add-pokemon/add-pokemon.component";
 
+import { AuthGuard } from "../auth-guard.service";
+
 const pokemonsRoutes: Routes = [
   {
     path: 'pokemon',
+    canActivate : [AuthGuard] ,
     children: [
       { path: 'all', component: PokemonComponent },
-      { path: 'edit/:id', component: EditPokemonComponent },
+      { path: 'edit/:id', component: EditPokemonComponent, canActivate : [AuthGuard] },
       { path: 'add', component: AddPokemonComponent },
       { path: ':id', component: DetailPokemonComponent }
     ]
