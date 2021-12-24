@@ -29,6 +29,18 @@ export class PokemonsService{
     }
   }
 
+  searchPokemon(term: string): Observable<Pokemon[]>{
+    if (!term.trim()) {
+      return of([]);
+      
+    }
+
+    return this.http.get<Pokemon[]>(`${this.pokemonsUrl}/?name=${term}`).pipe(
+      tap(_ => this.log(`found pokemons matching "${term}"`)),
+      catchError(this.handleError<Pokemon[]>('searchPokemon', []))
+    );
+  }
+
   //Le Pipe async est un pipe capable de consommer des Observables en appelant implicitement la méthode suscribe afin de récupérer les valeurs contenus dans l'observable
   //Retourne tous les pokémons
   getPokemons(): Observable<Pokemon[]>{

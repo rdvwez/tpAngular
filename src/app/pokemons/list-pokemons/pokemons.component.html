@@ -1,6 +1,8 @@
 <h1 class="center">Liste de Pokémons</h1>
 <div class="container">
   <div class="row">
+
+    <search-pokemon></search-pokemon>
     <div class=" center">
       <a (click)="goToCreate()" class=" btn-large waves-effect waves-light red" title="ajouter un pokemon">ajouter</a></div>
     <div *ngFor='let pokemon of pokemons' class="col s6 m4">
