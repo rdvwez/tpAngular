@@ -6,6 +6,12 @@
           <img [src]="pokemon.picture">
         </div>
         <div class="card-stacked">
+          <div class="card-action">
+            <a (click)="goBack()" class="waves-effect waves-light  btn-small btn">Retour</a>
+            <a (click)="goEdit(pokemon)" class="waves-effect waves-light btn-small btn yellow">Éditer</a>
+            <a (click)="delete(pokemon)" class="waves-effect waves-light btn-small btn red">Supprimer</a>
+          </div>
+
           <div class="card-content">
             <table class="bordered striped">
               <tbody>
@@ -41,11 +47,7 @@
             </table>
           </div>
 
-          <div class="card-action">
-            <a (click)="goBack()" class="waves-effect waves-light btn">Retour</a>
-            <a (click)="goEdit(pokemon)" class="waves-effect waves-light btn">Éditer</a>
-          </div>
-
+          
         </div> 
     </div>
   </div>

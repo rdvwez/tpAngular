@@ -21,6 +21,9 @@ export class DetailPokemonComponent implements OnInit{
     this.pokemonsService.getPokemon(id).subscribe(pokemon => this.pokemon = pokemon);
   }
 
+  delete(pokemon:Pokemon):void{
+    this.pokemonsService.deletePokemon(pokemon).subscribe(_ => this.goBack());
+  }
 
   goBack(): void{
     this.router.navigate(['/pokemon/all']);
